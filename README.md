@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-# Date:
+# Date:28/05/2026
 # AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
 
@@ -23,6 +23,168 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 # PROGRAM :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignHub — Simple Landing Page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">DesignHub</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Discover</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-3" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Banner -->
+  <header class="py-5 bg-white text-center border-bottom">
+    <div class="container">
+      <h2 class="fw-bold">Explore Creative Work From Top Designers</h2>
+      <p class="text-muted mb-4">A simple Bootstrap landing page inspired by Dribbble.</p>
+      <a href="#" class="btn btn-primary">Join Now</a>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="container my-5">
+    <h4 class="mb-3">Popular Categories</h4>
+
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3">
+        <img src="https://picsum.photos/seed/illu1/120/120" class="rounded-circle mb-2">
+        <p class="small mb-0">Illustration</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <img src="https://picsum.photos/seed/illu2/120/120" class="rounded-circle mb-2">
+        <p class="small mb-0">UI/UX</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <img src="https://picsum.photos/seed/illu3/120/120" class="rounded-circle mb-2">
+        <p class="small mb-0">Brand Design</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <img src="https://picsum.photos/seed/illu4/120/120" class="rounded-circle mb-2">
+        <p class="small mb-0">3D Art</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shots Grid -->
+  <section class="container mb-5">
+    <h5 class="mb-3">Featured Shots</h5>
+
+    <div class="row g-4">
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p1/600/400" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Minimal UI Kit</h6>
+            <p class="text-muted small mb-0">1.3k likes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p2/600/400" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Creative Poster</h6>
+            <p class="text-muted small mb-0">980 likes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p3/600/400" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Vector Art</h6>
+            <p class="text-muted small mb-0">812 likes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/seed/p4/600/400" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Dashboard Concept</h6>
+            <p class="text-muted small mb-0">1.1k likes</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="text-center mb-3">User Login</h5>
+            <form>
+              <div class="mb-3">
+                <label class="form-label small">Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label small">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <button class="btn btn-primary w-100">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top">
+    <div class="container py-4 d-flex flex-column flex-md-row justify-content-between">
+      <div class="small text-muted">© <span id="year"></span> DesignHub</div>
+      <div class="small text-muted">Built by K.SriSaran Karthik</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
 # OUTPUT:
+<img width="1912" height="1135" alt="image" src="https://github.com/user-attachments/assets/d398dc00-26d4-4e99-a560-58db78623c1f" />
+
+<img width="1891" height="1136" alt="image" src="https://github.com/user-attachments/assets/097ef334-a82b-4937-b8f4-509ad0c0e426" />
+
 # RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
